@@ -8,8 +8,10 @@
   <title>Skill Safari | Manage landing page</title>
 
   <!-- Bootstrap 4 CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" /> -->
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,500;0,700;1,400&display=swap"
@@ -24,7 +26,13 @@
   <link rel="stylesheet" href="./css/style.css" type="text/css" />
 </head>
 
-<body class="bg-image">
+<body>
+  <!-- bg image -->
+  <div class="container">
+    <div class="bg-image position-relative">
+      <img src="./images/bg-tablet-pattern.svg" alt="">
+    </div>
+  </div>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm" id="mainNavbar">
@@ -60,16 +68,16 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- Header starts -->
   <header class="header my-5">
-    <div class="container">
+    <div class="container text-md-left text-center px-4">
       <div class="row align-items-center">
         <div class="col-md-6 order-md-2">
           <img src="./images/illustration-intro.svg" class="img-fluid top-image mt-5" alt="intro image">
         </div>
         <div class="col-md-6 order-md-1 intro">
-          <h1 class="heading display-4 ">
+          <h1 class="heading display-4 text-dark">
             Bring everyone together to build better products.
           </h1>
           <p class="text-muted py-3">
@@ -86,57 +94,113 @@
   <section id="about" class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 py-5">
+        <div class="col-md-6 py-5 text-md-left text-center">
           <h2 class="heading">What's different about Manage?</h2>
-          <p class="pt-3 pr-5 text-muted">Manage provides all the functionality your team needs, without the complexity.
-            Our software is tailor-made for modern digital product teams </p>
+          <p class="pt-3 pr-md-5 text-muted">Manage provides all the functionality your team needs, without the
+            complexity.
+            Our software is tailor-made for modern digital product teams
+          </p>
         </div>
         <div class="col-md-6 py-5">
           <!-- para1 -->
-          <div class="row">
-            <div class="col-2"><span class="badge badge-color badge-pill"> 01 </span></div>
-            <div class="col-10">
-              <strong>Track company-wide progress</strong><br>
-              <p class="mt-3">
-                <span class="text-muted">See how your day-to-day tasks fit into the wider vision. Go from tracking
-                  progress of the milestone level all the way done to the smallest of details. Never lose sight of the
-                  bigger picture again</span>
-              </p>
-              </p>
+          <div class="d-md-none">
+            <div class="heading-bg row">
+              <div class="col-2 mt-1">
+                <span class="px-3 badge-color py-1"> 01 </span>
+              </div>
+              <div class="col-10 heading-bg py-1 px-3">
+                <strong>Track company-wide progress</strong>
+              </div>
+            </div>
+            <p class="mt-3 pl-3">
+              <small class="text-muted">See how your day-to-day tasks fit into the wider vision. Go from tracking
+                progress of the milestone level all the way done to the smallest of details. Never lose sight of the
+                bigger picture again.</small>
+            </p>
+          </div>
+          <div class="d-none d-md-flex">
+            <div class="row">
+              <div class="col-2"><span class="badge-color px-3 py-1"> 01 </span></div>
+              <div class="col-10">
+                <strong>Track company-wide progress</strong><br>
+                <p class="mt-3">
+                  <small class="text-muted">See how your day-to-day tasks fit into the wider vision. Go from tracking
+                    progress of the milestone level all the way done to the smallest of details. Never lose sight of the
+                    bigger picture again.</small>
+                </p>
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- Para 2 -->
-          <div class="row">
-            <div class="col-2"><span class="badge badge-color badge-pill"> 02 </span></div>
-            <div class="col-10">
-              <strong>Track company-wide progress</strong><br>
-              <p class="mt-3">
-                <span class="text-muted">See how your day-to-day tasks fit into the wider vision. Go from tracking
-                  progress of the milestone level all the way done to the smallest of details. Never lose sight of the
-                  bigger picture again</span>
-              </p>
-              </p>
+          <div class="d-md-none">
+            <div class="heading-bg row">
+              <div class="col-2 mt-1">
+                <span class="px-3 badge-color py-1"> 02 </span>
+              </div>
+              <div class="col-10 heading-bg py-1 px-3">
+                <strong>Advanced built-in reports</strong>
+              </div>
+            </div>
+            <p class="mt-3 pl-3">
+              <small class="text-muted">Set internal delivery estimates and track progress toward company goals. Our
+                customisable dashboard helps yoou build out the reports you need to keep key stakeholders
+                informed.</small>
+            </p>
+          </div>
+          <div class="d-none d-md-flex">
+            <div class="row">
+              <div class="col-2"><span class="badge-color px-3 py-1"> 02 </span></div>
+              <div class="col-10">
+                <strong>Advanced built-in reports</strong><br>
+                <p class="mt-3">
+                  <small class="text-muted">Set internal delivery estimates and track progress toward company goals. Our
+                    customisable dashboard helps yoou build out the reports you need to keep key stakeholders
+                    informed.</small>
+                </p>
+                </p>
+              </div>
             </div>
           </div>
 
           <!-- para 3 -->
-          <div class="row">
-            <div class="col-2"><span class="badge badge-color badge-pill"> 03 </span></div>
-            <div class="col-10">
-              <strong>Track company-wide progress</strong><br>
-              <p class="mt-3">
-                <span class="text-muted">See how your day-to-day tasks fit into the wider vision. Go from tracking
-                  progress of the milestone level all the way done to the smallest of details. Never lose sight of the
-                  bigger picture again</span>
-              </p>
-              </p>
+          <div class="d-md-none">
+            <div class="heading-bg row">
+              <div class="col-2 mt-1">
+                <span class="px-3 badge-color py-1"> 03 </span>
+              </div>
+              <div class="col-10 heading-bg py-1 px-3">
+                <strong>Everything you need in one place</strong>
+              </div>
+            </div>
+            <p class="mt-3 pl-3">
+              <small class="text-muted">Stop jumping from one service to another to communicate, store files, track
+                tasks and share documents. Manage offers an all-in-one team productivity solution.</small>
+            </p>
+          </div>
+          <div class="d-none d-md-flex">
+            <div class="row">
+              <div class="col-2"><span class="badge-color px-3 py-1"> 03 </span></div>
+              <div class="col-10">
+                <strong>Everything you need in one place</strong><br>
+                <p class="mt-3">
+                  <small class="text-muted">Stop jumping from one service to another to communicate, store files, track
+                    tasks and share documents. Manage offers an all-in-one team productivity solution.</small>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
+
+  <!-- bg image -->
+  <div class="bg-image-1 position-relative">
+    <img src="./images/bg-tablet-pattern.svg" alt="">
+  </div>
 
   <!-- Testimonials -->
   <section id="comments" class="py-5">
@@ -160,51 +224,56 @@
               <li data-target="#testimonial" data-slide-to="3" class="slider"></li>
             </ol>
             <div class="carousel-inner">
-                <!-- carousl-item -->
-                <div class="carousel-item active pt-5">
-                    <div class="card text-center p-3">
-                      <img src="./images/avatar-anisha.png" alt="" class="card-img">
-                      <p class=""><strong>Anisha Li</strong></p>
-                      <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti culpa
-                        minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
-                    </div>
+              <!-- carousl-item -->
+              <div class="carousel-item active pt-5">
+                <div class="card text-center p-3">
+                  <img src="./images/avatar-anisha.png" alt="" class="card-img">
+                  <p class=""><strong>Anisha Li</strong></p>
+                  <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti
+                    culpa
+                    minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
                 </div>
-                <!--carousel-item-->
-                <div class="carousel-item pt-5">
-                  <div class="card text-center p-3">
-                    <img src="./images/avatar-ali.png" alt="" class="card-img">
-                    <p class=""><strong>Ali Bravo</strong></p>
-                    <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti culpa
-                      minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
-                  </div>
+              </div>
+              <!--carousel-item-->
+              <div class="carousel-item pt-5">
+                <div class="card text-center p-3">
+                  <img src="./images/avatar-ali.png" alt="" class="card-img">
+                  <p class=""><strong>Ali Bravo</strong></p>
+                  <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti
+                    culpa
+                    minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
                 </div>
-                <!--carousel-item-->
-                <div class="carousel-item pt-5">
-                  <div class="card text-center p-3">
-                    <img src="./images/avatar-richard.png" alt="" class="card-img">
-                    <p class=""><strong>Richard Watts</strong></p>
-                    <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti culpa
-                      minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
-                  </div>
+              </div>
+              <!--carousel-item-->
+              <div class="carousel-item pt-5">
+                <div class="card text-center p-3">
+                  <img src="./images/avatar-richard.png" alt="" class="card-img">
+                  <p class=""><strong>Richard Watts</strong></p>
+                  <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti
+                    culpa
+                    minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
                 </div>
-                <!--carousel-item-->
-                <div class="carousel-item pt-5">
-                  <div class="card text-center p-3">
-                    <img src="./images/avatar-richard.png" alt="" class="card-img">
-                    <p class=""><strong>Richard Watts</strong></p>
-                    <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti culpa
-                      minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
-                  </div>
+              </div>
+              <!--carousel-item-->
+              <div class="carousel-item pt-5">
+                <div class="card text-center p-3">
+                  <img src="./images/avatar-richard.png" alt="" class="card-img">
+                  <p class=""><strong>Richard Watts</strong></p>
+                  <p class="text-muted py-3">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit deleniti
+                    culpa
+                    minus animi vero quibusdam, repellendus modi rerum ex odit!"</p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
       <!-- Large screen -->
-      <div class="row pt-5 d-none d-md-flex text-center">
+
+      <div class=" pt-5 d-none d-md-flex text-center scroll" style="overflow-x:scroll; ">
         <!-- Card-1 -->
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card text-center p-3">
             <img src="./images/avatar-anisha.png" alt="" class="card-img">
             <p class=""><strong>Anisha Li</strong></p>
@@ -214,7 +283,7 @@
         </div>
 
         <!-- Card-2 -->
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card text-center p-3">
             <img src="./images/avatar-ali.png" alt="" class="card-img">
             <p class=""><strong>Ali Bravo</strong></p>
@@ -224,7 +293,7 @@
         </div>
 
         <!-- Card-3 -->
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card text-center p-3">
             <img src="./images/avatar-richard.png" alt="" class="card-img">
             <p class=""><strong>Richard Watts</strong></p>
@@ -234,7 +303,7 @@
         </div>
 
         <!-- card-4 -->
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="card text-center p-3">
             <img src="./images/avatar-shanai.png" alt="" class="card-img">
             <p class=""><strong>Shanai Gough</strong></p>
@@ -246,24 +315,29 @@
     </div>
 
     <!-- Button -->
-    <div class="row py-5 text-center">
-      <div class="col">
-        <button class="btn btn-lg btn-property mt-3 ml-auto">Get Started</button>
+    <div class="container">
+      <div class="row py-5 text-center">
+        <div class="col">
+          <button class="btn btn-lg btn-property mt-3 ml-auto">Get Started</button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Pre-Footer -->
-  <section class="bg-orange container-fluid">
+  <section class="bg-orange container-fluid text-md-left text-center" style="overflow: hidden;">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
+          <div class="bg-image-2 position-relative">
+            <img src="./images/bg-tablet-pattern.svg" alt="">
+          </div>
           <h2 class="heading text-white">
             Simplify how your team works today.
           </h2>
         </div>
-        <div class="col-md-6 text-center">
-          <button class="btn btn-lg btn-property-1 mt-5 ml-auto">Get Started</button>
+        <div class="col-md-6 d-flex text-center">
+          <button class="btn btn-lg btn-property-1 my-5  mx-auto">Get Started</button>
         </div>
       </div>
     </div>
@@ -276,13 +350,13 @@
 
         <!-- Form -->
         <div class="col-md-4 order-md-3 py-5">
-          <form action="#" class="mb-3">
+          <form action="myForm" class="mb-3">
             <div class="row">
-              <div class="col-10 pr-0">
+              <div class="col-9 pr-0">
                 <input type="email" class="form-control input" required placeholder="Updates in your inbox...">
               </div>
-              <div class="col-1 text-center">
-                <button class="btn go-btn pl-3 pr-5">Go  </button>
+              <div class="col-2 text-center">
+                <button class="btn go-btn px-3">Go </button>
               </div>
             </div>
           </form>
@@ -323,22 +397,27 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Logo -->
         <!-- Small screen -->
-        <div class="col-md-3 order-md-1 text-center d-md-none">
+        <div class="col-md-3 order-md-1 mx-auto d-md-none">
           <ul class="nav pt-5 pl-3 flex-row d-md-none">
-            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-facebook.svg" alt="facebook logo"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-youtube.svg" alt="youtube logo"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-twitter.svg" alt="twitter logo"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-pinterest.svg" alt="pintrest logo"></a></li>
-            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-instagram.svg" alt="instagram logo"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-facebook.svg"
+                  alt="facebook logo"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-youtube.svg"
+                  alt="youtube logo"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-twitter.svg"
+                  alt="twitter logo"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-pinterest.svg"
+                  alt="pintrest logo"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link"><img src="./images/icon-instagram.svg"
+                  alt="instagram logo"></a></li>
           </ul>
           <a href="#"><i><img src="./images/logo-white.svg" class="pt-5" alt="logo"></i></a>
           <p class="pt-5 text-center text-muted"><small>Copyright 2020. All Rights Reserved</small></p>
         </div>
 
-         <!-- large screen -->
+        <!-- large screen -->
         <div class="col-md-3 order-md-1 d-none d-md-block">
           <a href="#"><i><img src="./images/logo-white.svg" class="pt-5" alt="logo"></i></a><br>
           <div class="pt-5">
@@ -356,18 +435,25 @@
 
 
   <!-- Bootstrap 4 Script -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  <!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <!-- Custom Script -->
-  <script src="./js/scrtpt.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
