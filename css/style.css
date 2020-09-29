@@ -1,7 +1,6 @@
 *{
     margin-top: 0;
-    margin-left: 0;
-    max-width: 100%;
+    margin-right: 0;
 }
 
 body{
@@ -17,7 +16,7 @@ body{
 .nav-link:hover{
     color: rgba(0, 0, 0, 0.5);
 }
-
+ 
 .hidden{
     display: none;
 }
@@ -45,20 +44,65 @@ body{
     margin-top: 10vh;
 }
 
-.bg-image{
-    background-image: url(../images/bg-tablet-pattern.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.bg-image img{
+    position: absolute;
+    z-index: -1;
+    top: -250px;
+    right: -180px;
 }
 
+.bg-image-1 img{
+    position: absolute;
+    z-index: -1;
+    top: -350px;
+    right: 70%;
+}
 
+.bg-image-2 img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+    top: -50px;
+    right: 0;
+}
+
+.scroll::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 540px){
+    .bg-image img{
+        position: absolute;
+        z-index: -1;
+        top: -10px;
+        right: -10px;
+    }
+    
+    .bg-image-1 img{
+        position: absolute;
+        z-index: -1;
+        top: -350px;
+        right: 70%;
+    }
+    
+    .bg-image-2 img{
+        position: absolute;
+        z-index: 0;
+        opacity: 0.1;
+        top: -50px;
+        right: 0;
+    }
+    
+}
 
 .badge-color{
     color: white;
-    padding: 6px 15px 6px 15px;
+    border-radius: 15px;
     background-color: hsl(12, 88%, 59%);
+}
+
+.heading-bg{
+    background-color: hsla(12, 82%, 63%, 0.15);
 }
 
 .card-img{
@@ -71,6 +115,7 @@ body{
 .bg-orange{
     background-color:  hsl(12, 88%, 59%, 0.9);
     padding: 50px;
+
 }
 
 .card{
@@ -83,10 +128,10 @@ body{
 }
 
 .btn-property-1{
+    font-size: small;
     background-color: white;
-    font-size: 10pt;
     color: hsl(12, 93%, 55%);
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.808);
 }
 
@@ -97,6 +142,10 @@ body{
 
 .bg-blue{
     background-color: hsl(228, 24%, 12%);
+}
+
+footer{
+    z-index: 2;
 }
 
 .input{
